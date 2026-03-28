@@ -196,11 +196,33 @@
     box-shadow: 3px 3px 0 rgba(0,0,0,0.2);
     transition: transform 0.1s, box-shadow 0.1s;
     letter-spacing: 0.5px;
+    margin-bottom: 10px;
   }
 
   .btn-start:active {
     transform: translate(2px,2px);
     box-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+  }
+
+  .btn-download {
+    display: inline-block;
+    background: transparent;
+    color: var(--accent);
+    border: 1.5px dashed var(--accent);
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    letter-spacing: 0.3px;
+  }
+
+  .btn-download:hover {
+    background: var(--accent);
+    color: white;
   }
 
   /* ===== QUIZ SCREEN ===== */
@@ -587,6 +609,7 @@
       <span class="diff-label">Trudność: średni</span>
     </div>
     <button class="btn-start" onclick="startQuiz()">✏️ Zaczynamy!</button>
+    <a class="btn-download" href="https://printpl.github.io/sprawdzian-z-geografii/karta-odpowiedzi.pdf" download target="_blank">📄 Pobierz kartę odpowiedzi</a>
   </div>
 </div>
 
